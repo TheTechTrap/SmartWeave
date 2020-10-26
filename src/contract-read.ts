@@ -34,7 +34,7 @@ export async function readContract (arweave: Arweave, contractId: string, height
     throw new Error(`Unable to parse initial state for contract: ${contractId}`)
   }
 
-  log(arweave, `Replaying ${txInfos.length} confirmed interactions`)
+  //log(arweave, `Replaying ${txInfos.length} confirmed interactions`)
 
   await sortTransactions(arweave, txInfos)
 
